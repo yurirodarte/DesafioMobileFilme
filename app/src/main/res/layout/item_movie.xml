@@ -1,0 +1,82 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black">
+
+        <ImageView
+            android:id="@+id/item_movie_poster"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:id="@+id/nome_filme"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_toEndOf="@+id/item_movie_poster"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="50dp"
+            android:text="Nome Filme"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/ano_filme"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/nome_filme"
+            android:layout_toEndOf="@+id/item_movie_poster"
+            android:layout_marginStart="15dp"
+            android:text="2009"
+            android:textSize="15dp"/>
+
+        <CheckBox
+            android:id="@+id/imagem_coracao_borda"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/button_favorite"
+            android:button="@null"
+            android:checked="false"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:id="@+id/vote_count"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/imagem_coracao_borda"
+            android:layout_toEndOf="@+id/nome_filme"
+            android:text="2009"
+            android:textSize="15dp"/>
+
+        <ImageView
+            android:id="@+id/imagem_olhos"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_baseline_remove_red_eye_24"
+            android:layout_below="@+id/nome_filme"
+            android:layout_toEndOf="@+id/ano_filme"/>
+
+        <TextView
+            android:id="@+id/view"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/nome_filme"
+            android:layout_toEndOf="@+id/imagem_olhos"
+            android:layout_marginStart="15dp"
+            android:text="2009"
+            android:textSize="15dp"/>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
